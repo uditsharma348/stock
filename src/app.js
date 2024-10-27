@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4200;
 // MongoDB Connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI || "mongodb+srv://uditsharma:udit456@cluster0.mongodb.net/stock_db?retryWrites=true&w=majority", {
+    await mongoose.connect(process.env.MONGO_URI ||'mongodb+srv://uditsharma:udit456@cluster0.mongodb.net/stock_db', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
